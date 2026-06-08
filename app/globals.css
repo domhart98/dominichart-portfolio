@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --cyan: #dc00dc;
+  --sky: #0CFFFF;
+  --darkblue: #100425;
+  --lightgrey: #F8F8F8;
+  --lightlightgrey: #Fafafa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --hero-bg-color: bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-[#831843] via-[#be185d] to-[#f472b6];
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--darkblue);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+  letter-spacing: 0.03em;
+}  
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-josefin);
+  letter-spacing: 0.03em;
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(to bottom left, #DC00DC, #0CFFFF);
+}
+
+.text-gradient-custom {
+  background: linear-gradient(to left, #DC00DC, #0CFFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.smooth-scale-110{
+  transition: transform 0.3s ease-in-out;
+}
+.smooth-scale-110:hover{
+  transform: scale(1.1);
+}
+
+/* Navbar */
+.nav-link{
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 100%;
+  height: 2px;
+
+  /*background: linear-gradient(
+    90deg,
+    #22d3ee,
+    #a855f7
+  );*/
+  background: #FFFFFF;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1.1);
+}
+
+.sigma-logo{
+  filter:
+    brightness(1.5)
+    drop-shadow(0 0 4px white)
+    drop-shadow(0 0 12px white);
+}
