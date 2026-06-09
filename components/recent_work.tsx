@@ -1,6 +1,6 @@
 import ProjectCard from "./project_card";
 
-export default function Recent_Work() {
+export default function RecentWork() {
   return (
     <section id="recent-work-section" className="justify-items-center w-[70%] py-60">
         <h2 className="text-6xl md:text-7xl text-gradient-custom">Recent Work</h2>

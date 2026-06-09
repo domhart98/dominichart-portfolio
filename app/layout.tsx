@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import { Josefin_Sans, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -31,9 +32,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${josefin.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col z-0">
-        <Navbar></Navbar>
+      <body className="min-h-full flex flex-col z-0 justify-items-center items-center relative">
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -6,17 +6,15 @@ import "./hero_banner.css";
 import { useEffect } from "react";
 import Typewriter from "./typewriter";
 
-/**
- * HeroBanner Parameters
- * @param {string} title - Main header text
- * @param {string} subtitle - sub header text
- * @param {string} description - supporting text 
- * @param {string} ctaText - Call-to-action button text
- * @param {string} ctaLink - Call-to-action button link
- * @param {string} imageSrc - Background or side image
- */
+interface HeroBannerProps{
+  title: string,
+  subtitle: string,
+  description: string,
+  ctaLink: string,
+  ctaText: string,
+}
 
-export default function Hero_Banner({title, subtitle, description, ctaLink, ctaText}) {
+export default function HeroBanner({title, subtitle, description, ctaLink, ctaText}: HeroBannerProps) {
   return (
     <section className="relative text-slate-300 bg-[url('/images/aurora-gradient-5.webp')] pt-20 border-solid border-x-1 border-t-1 border-white mx-4 mt-4 rounded-xl">
       <div className="columns-2 gap-6 px-40">

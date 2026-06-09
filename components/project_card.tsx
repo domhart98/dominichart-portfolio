@@ -1,16 +1,22 @@
 import Image from "next/image";
 
-/**
- * ProjectCard Parameters
- * @param {string} title - project name text
- * @param {string} description - project description text 
- * @param {string} imageSrc - project image
- * @param {array} skills - list of skills used in project
- * @param {boolean} reverse - is the card reversed?
- * @param {string} projectLink - link to full project
- */
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  imageSrc: string;
+  skills: string[];
+  reverse: boolean;
+  projectLink: string;
+}
 
-export default function ProjectCard({title, description, imageSrc, skills, reverse, projectLink}) {
+export default function ProjectCard({
+  title, 
+  description, 
+  imageSrc, 
+  skills, 
+  reverse, 
+  projectLink
+}: ProjectCardProps) {
   
   const skillsList = [];
 
@@ -60,7 +66,7 @@ export default function ProjectCard({title, description, imageSrc, skills, rever
           <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
             <Image className=""
                    src={"/images/icons/new-tab-icon.svg"} 
-                   alt={"Test"} 
+                   alt={"china trip"} 
                    width={100} 
                    height={100}
             />

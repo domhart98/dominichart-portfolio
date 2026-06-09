@@ -3,12 +3,14 @@
 import { useEffect, useRef } from "react";
 
 export default function CursorGlow() {
-  const glowRef = useRef(null);
+  const glowRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const glow = glowRef.current;
 
-    const handleMove = (e) => {
+    if(!glow) return;
+
+    const handleMove = (e: MouseEvent) => {
       glow.style.left = `${e.clientX}px`;
       glow.style.top = `${e.clientY}px`;
     };

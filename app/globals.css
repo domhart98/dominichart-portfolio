@@ -93,3 +93,8 @@ h1, h2, h3, h4, h5, h6 {
     drop-shadow(0 0 4px white)
     drop-shadow(0 0 12px white);
 }
+
+.bold{
+  color: #FFFFFF;
+  font-weight: 600;
+}
