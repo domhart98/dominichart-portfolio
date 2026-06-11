@@ -4,10 +4,10 @@ import "../globals.css"
 
 export default function ProjectsPage(){
     return(
-        <div className="justify-items-center m-60">
+        <div className="justify-items-center items-center mt-60 w-[80%] | md:m-60 md:w-[70%]">
             
-            <h2 className="relative text-6xl md:text-7xl text-gradient-custom">Featured Projects</h2>
-            <div className="w-[80%] mt-20">
+            <h2 className="relative text-5xl md:text-7xl text-gradient-custom text-center | md:text-7xl md:mt-10">Featured Projects</h2>
+            <div className="mt-20 | md:mt-30">
                 <ProjectCardLarge
                     title="Smart Living Barbados"
                     role="Web Development"
@@ -28,7 +28,7 @@ export default function ProjectsPage(){
                 />
             </div>
             
-            <div className="w-[80%] mt-40">
+            <div className="mt-20 | md:mt-30">
                 <ProjectCardLarge
                     title="Carolina's Barbados"
                     role="Web Development"
@@ -51,7 +51,7 @@ export default function ProjectsPage(){
                 />
             </div>
             
-            <div className="w-[80%] mt-40">
+            <div className="mt-20 | md:mt-30">
                 <ProjectCardLarge
                     title="Dominic Hart Portfolio"
                     role="Web Development ◆ UI Design"
@@ -74,8 +74,8 @@ export default function ProjectsPage(){
                 />
             </div>
 
-            <h2 className="relative text-6xl md:text-7xl text-gradient-custom mt-40">Cybersecurity Learning</h2>
-            <div className="w-[80%] mt-40">
+            <h2 className="relative text-5xl text-gradient-custom mt-30 text-center | md:text-7xl md:mt-60">Cybersecurity Learning</h2>
+            <div className="mt-20 mb-10 | md:mt-30">
                 <ProjectCardLarge
                     title="TryHackMe Learning Journey"
                     role="Cybersecurity"

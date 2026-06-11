@@ -20,10 +20,9 @@ export default function ResumeEntry({
   return (
     <div className="relative max-w-5xl mx-auto">
         {/* Image */}
-        <div className="w-[800px] h-[450px] overflow-hidden rounded-2xl
-                        border border-white/10 bg-white/[0.03] 
-                        backdrop-blur-sm shadow-[0_0_40px_rgba(168,85,247,.15)]
-                        transition-all duration-500">
+        <div className="w-full h-[250px] overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] 
+                        backdrop-blur-sm shadow-[0_0_40px_rgba(168,85,247,.15)] transition-all duration-500
+                        | md:w-[800px] md:h-[450px]">
             <Image className="w-full h-full object-cover" 
                    src={imgSources[activeSlide]} alt="" width={800} height={450}/>
         </div>

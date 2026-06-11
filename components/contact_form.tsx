@@ -60,19 +60,19 @@ export default function ContactForm() {
     <form className="w-full" onSubmit={handleSubmit}>
         <div className="flex-1">
             <div className="p-8 rounded-2xl bg-slate-900/60 border border-white/10 backdrop-blur-xl">
-                <label className="text-slate-300">Name</label>
-                <input className="w-full text-slate-300 mt-2 mb-6 p-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-cyan-400focus:border-cyan-400"
+                <label className="text-slate-300 text-sm | md:text-lg">Name</label>
+                <input className="w-full text-xs font-light text-slate-300 mt-2 mb-6 p-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 | md:text-lg"
                         type="text" value={name} onChange={(e:any) => setName(e.target.value)}
                 />
-                <label className="text-slate-300">Email</label>
-                <input className="w-full text-slate-300 mt-2 mb-6 p-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-cyan-400focus:border-cyan-400"
+                <label className="text-slate-300 text-sm | md:text-lg">Email</label>
+                <input className="w-full text-xs font-light text-slate-300 mt-2 mb-6 p-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 | md:text-lg"
                         type="email" value={email} onChange={(e:any) => setEmail(e.target.value)}
                 />
-                <label className="text-slate-300">Message</label>
-                <textarea className="w-full text-slate-300 mt-2 mb-6 p-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-cyan-400focus:border-cyan-400"
+                <label className="text-slate-300 text-sm | md:text-lg">Message</label>
+                <textarea className="w-full text-xs font-light text-slate-300 mt-2 mb-6 p-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 | md:text-lg"
                             rows={5} value={message} onChange={(e:any) => setMessage(e.target.value)}
                 />
-                <button className="px-6 py-3 rounded-full bg-gradient-custom text-white smooth-scale-110 disabled:opacity-50"
+                <button className="px-5 py-3 rounded-full bg-gradient-custom text-white text-sm smooth-scale-110 disabled:opacity-50 | md:py-4 md:px-8 md:mb-6 md:text-lg" 
                         disabled={loading} type="submit">
                     {loading ? "Sending..." : "Send Message"} 
                 </button>

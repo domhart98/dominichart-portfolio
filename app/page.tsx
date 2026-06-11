@@ -7,18 +7,18 @@ import ContactItem from "@/components/contact_item";
 
 export default function Home() {
 return (
-    <div className="">
+    <div className="w-full">
       <CursorGlow/>
+      <HeroBanner title={"Dominic Hart"} subtitle={"Web Developer & IT Systems Professional"} description={"Hi, I am a full-stack developer from Barbados, with over 5 years of experience in coding. I consider myself a generalist, and have worked in web development, software development, cloud computing, and networking, both professionally & freelance. I am always looking for ways to increase my knowledge, and I am in the process of getting my COMPTIA Network+ & Security+ Certifications. Away from my workstation, I train and play cricket, I run with a club, play chess, amongst other things. I am a team player, looking for that one opportunity that i can apply all of my skills and dedicate myself to."} ctaText={"View Projects"} ctaLink={"/projects"}/>
       <main className="justify-items-center z-0">
-        <HeroBanner title={"Dominic Hart"} subtitle={"Web Developer & IT Systems Professional"} description={"Hi, I am a full-stack developer from Barbados, with over 5 years of experience in coding. I consider myself a generalist, and have worked in web development, software development, cloud computing, and networking, both professionally & freelance. I am always looking for ways to increase my knowledge, and I am in the process of getting my COMPTIA Network+ & Security+ Certifications. Away from my workstation, I train and play cricket, I run with a club, play chess, amongst other things. I am a team player, looking for that one opportunity that i can apply all of my skills and dedicate myself to."} ctaText={"View Projects"} ctaLink={"/work"}/>
         <About/>
         <RecentWork/>
-        <section className="relative items-center justify-items-center w-[70%] py-40">
+        <section className="relative items-center justify-items-center w-[80%] py-14 | md:py-40 md:w-[70%]">
           <h2 className="text-6xl md:text-7xl text-gradient-custom pb-20">Contact</h2>
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+          <div className="flex flex-col gap-12 | md: | lg:gap-20 lg:flex-row">
               <div className="flex-1">
-                  <h3 id="contact-section" className="text-cyan-300 text-4xl mb-4">Let's Connect</h3>
-                  <p className="text-slate-300 leading-8 mb-10">
+                  <h3 id="contact-section" className="text-cyan-300 text-3xl mb-4 | md:text-4xl">Let's Connect</h3>
+                  <p className="text-slate-300 leading-8 mb-4 text-xs | md:mb-10 md:text-lg">
                       I'm always interested in discussing web development,
                       cloud technologies, cybersecurity, and new opportunities.
                       Whether you have a project in mind or simply want to
@@ -34,7 +34,6 @@ return (
               
             </div>
         </section>
-        
       </main>
     </div>
   );

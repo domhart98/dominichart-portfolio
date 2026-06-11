@@ -24,7 +24,7 @@ export default function ProjectCard({
             {/* Image */}
             <div className="relative overflow-hidden">
                 <Image src={imageSrc} alt={title} width={1200} height={800} 
-                       className=" w-full h-[350px] object-cover transition-all duration-700 group-hover:scale-105"/>
+                       className=" w-full h-[40%] object-cover transition-all duration-700 group-hover:scale-105"/>
 
                 {/* Gradient Overlay */}
 
@@ -32,23 +32,23 @@ export default function ProjectCard({
             </div>
 
             {/* Content */}
-            <div className="p-8">
-                <span className="text-sm uppercase tracking-[0.25em] text-cyan-400">
+            <div className="p-8 | md:p-12">
+                <span className="text-sm uppercase tracking-[0.25em] text-cyan-400 | md:text-lg">
                     {role}
                 </span>
 
-                <h3 className="mt-2 text-3xl font-bold text-white">
-                {title}
+                <h3 className="mt-2 text-xl font-bold text-white | md:text-5xl md:pb-2 md:pt-1">
+                    {title}
                 </h3>
 
-                <p className="mt-4 text-white/70 leading-relaxed">
-                {description}
+                <p className="mt-4 text-xs text-slate-300 leading-relaxed | md:text-lg">
+                    {description}
                 </p>
 
                 {/* Tech Stack */}
                 <div className="mt-6 flex flex-wrap gap-2">
                     {technologies.map((tech) => (
-                        <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-white/80">
+                        <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300 | md:text-lg">
                             {tech}
                         </span>
                     ))}
@@ -60,7 +60,7 @@ export default function ProjectCard({
                         href={projectURL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-8 inline-flex items-center text-cyan-400 transition-colors duration-300 hover:text-purple-400"
+                        className="text-sm mt-6 inline-flex items-center text-cyan-400 transition-colors duration-300 hover:text-purple-400 | md:text-2xl md:mt-8"
                     >
                         View Project →
                     </a>

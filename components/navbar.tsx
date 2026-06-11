@@ -40,9 +40,10 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 bg-transparent py-14 px-40 z-50 text-white w-full transition-all duration-300 
+    <nav className={`fixed top-0 bg-transparent py-6 px-4 z-50 text-white w-full transition-all duration-300 
                     ${isVisible ? "translate-y-0":"-translate-y-full"} 
-                    ${isAtTop ? "bg-transport":"bg-slate-950/80 backdrop-blur-lg shadow-lg z-100"}`}>
+                    ${isAtTop ? "bg-transport":"bg-slate-950/80 backdrop-blur-lg shadow-lg z-100"}
+                    | md:px-10 | md:px-40`}>
         <div className="flex items-center justify-between">
             <Link className="nav-link" href="/">HOME</Link>
             <Link className="nav-link" href="/experience">EXPERIENCE</Link>
