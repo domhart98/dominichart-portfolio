@@ -1,5 +1,10 @@
 [TO:DO]
-
-> Navbar scrolling effects fix
+!!!
+> Navbar scrolling effects fix: 1. Navbar slides back down immediately after down-scroll, instead of waiting on up-scroll.
+                                2. Second menu becomes visible on down-scroll on Experience Page
+> Contact form fix: Messages failing to send
+!!
 > Project Card description fix (Desktop)
+> Increase Hero button width so text is on one line (mobile)
+!
 > Test justified text, may look better
