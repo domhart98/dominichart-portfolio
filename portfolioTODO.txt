@@ -1,0 +1,5 @@
+[TO:DO]
+
+> Navbar scrolling effects fix
+> Project Card description fix (Desktop)
+> Test justified text, may look better
