@@ -6,22 +6,25 @@ export default function RecentWork() {
         <h2 className="text-6xl text-gradient-custom text-center | md:text-7xl">Recent Work</h2>
         <h6 className="text-sm text-white text-center | md:text-2xl">A collection of projects i've worked on</h6>
         <div className="">
+
+            <div className="pt-20">
+                <ProjectCard title={"Green Office Barbados"} 
+                             imageSrc={"/images/greenoffice-dashboard.webp"} 
+                             skills={["Next.js", "Typescript", "AWS", "Ubuntu" ]} 
+                             reverse={true}
+                             projectLink={"carolinasbarbados.com"} 
+                             description={"I created an Invoicing and Inventory Tracking Web App used for daily operations of Green Office Barbados businesses. Employee, warehouse, and content management functionality currently in development."} />
+            </div>
+            
             <div className="pt-14">
                 <ProjectCard title={"Smart Living Barbados"} 
                              imageSrc={"/images/smartliving-home.webp"} 
-                             skills={["HTML&CSS", "Wordpress", "AWS", "Ubuntu" ]} 
+                             skills={["HTML", "Wordpress", "AWS", "Ubuntu" ]} 
                              reverse={false}
                              projectLink={"smartlivingbarbados.com"} 
-                             description={"Developed and maintain a property management platform featuring property listings, search functionality and Google map integration for Barbados real estate."} />
+                             description={"I Developed and currently maintain a property management platform featuring property listings, search functionality and Google map integration for Barbados real estate."} />
             </div>
-            <div className="pt-20">
-                <ProjectCard title={"Carolinas Bistro & Bar"} 
-                             imageSrc={"/images/carolinas-home.webp"} 
-                             skills={["PHP", "HTML&CSS", "AWS", "Ubuntu" ]} 
-                             reverse={true}
-                             projectLink={"carolinasbarbados.com"} 
-                             description={"Developed and maintain the online presence for Carolina's Barbados, creating a responsive website designed to showcase the business and improve customer engagement across desktop and mobile devices."} />
-            </div>
+            
                
         </div>
     </section>

@@ -8,7 +8,6 @@ import "./experience.css";
 export default function ExperiencePage() {
   return (
     <div className="w-[80%] mt-40 justify-items-center | md:mt-80">
-      <Navbar/>
       <div className="grid grid-cols-1 gap-8 | md:grid-cols-[320px_1fr] md:gap-12">
         <div>
           <h2 className="text-4xl text-gradient-custom text-center | md:sticky md:top-32 md:pb-20 md:text-5xl">
@@ -23,7 +22,8 @@ export default function ExperiencePage() {
               role="Business Operations & Web Development"
               responsibilities={["Daily management of business operations for wholesale souvenir business.",
                                 "Support for small realtor, including client viewings, media, and property management.",
-                                "Freelance web development."]}
+                                "https://greenofficebarbados.com",
+                                "https://smartlivingbarbados.com"]}
             />
             <ResumeEntry
               date="Aug 2024 - Aug 2025"

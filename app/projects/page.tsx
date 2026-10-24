@@ -7,6 +7,31 @@ export default function ProjectsPage(){
         <div className="justify-items-center items-center mt-60 w-[80%] | md:m-60 md:w-[70%]">
             
             <h2 className="relative text-5xl md:text-7xl text-gradient-custom text-center | md:text-7xl md:mt-10">Featured Projects</h2>
+
+            <div className="mt-20 | md:mt-30">
+                <ProjectCardLarge
+                    title="Green Office Barbados"
+                    role="Web Development ◆ Business Operations"
+                    imageSrc="/images/greenoffice-dashboard.webp"
+                    projectURL="https://greenofficebarbados.com"
+                    technologies={[
+                        "Next.js",
+                        "TypeScript",
+                        "MySQL",
+                        "AWS Hosting",
+                        "Cloudflare",
+                    ]}
+                    description="
+                        Invoicing and Inventory Tracking Web App used for daily operations
+                        of Green Office Barbados businesses. Those include wholesale souvenir, 
+                        plant rentals and maintenance, brochure distribution, etc.
+
+                        Sign in with credentials the following credentials to view as a demo user with
+                        limited functionality: username=Demo User || passwword: test123
+                    "
+                />
+            </div>
+
             <div className="mt-20 | md:mt-30">
                 <ProjectCardLarge
                     title="Smart Living Barbados"
@@ -54,7 +79,7 @@ export default function ProjectsPage(){
             <div className="mt-20 | md:mt-30">
                 <ProjectCardLarge
                     title="Dominic Hart Portfolio"
-                    role="Web Development ◆ UI Design"
+                    role="UI Design"
                     imageSrc="/images/portfolio-banner.webp"
                     projectURL="https://dominichart.com"
                     technologies={[
